@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UG Open — First Serve | Ultima Genomics Table Tennis Championship</title>
+  <meta name="description" content="The inaugural Ultima Genomics table tennis championship. 24 players, single elimination, one paddle to rule them all." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top bar — echoes the UG Service Desk portal -->
+  <header class="topbar">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="26" height="26"><path d="M4 6l12 8 12-8M4 26l12-8 12 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-text">Ultima Genomics</span>
+    </a>
+    <nav class="topnav" aria-label="Primary">
+      <a href="#format">Format</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#rules">Rules</a>
+      <a class="topnav-cta" href="#register">Register</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shards" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="eyebrow">Inaugural Championship · Fremont HQ</p>
+        <h1 id="hero-title">
+          <span class="line">UG</span>
+          <span class="line accent">OPEN</span>
+        </h1>
+        <p class="hero-sub">First Serve — the first company-wide table tennis bracket. Twenty-four players enter. One paddle leaves immortal.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#register">Claim your seed</a>
+          <a class="btn btn-ghost" href="#format">See the bracket</a>
+        </div>
+
+        <!-- Countdown scoreboard -->
+        <div class="scoreboard" id="countdown" aria-live="polite">
+          <div class="score"><span class="num" data-unit="days">--</span><span class="lbl">days</span></div>
+          <div class="sep">:</div>
+          <div class="score"><span class="num" data-unit="hours">--</span><span class="lbl">hrs</span></div>
+          <div class="sep">:</div>
+          <div class="score"><span class="num" data-unit="mins">--</span><span class="lbl">min</span></div>
+          <div class="sep">:</div>
+          <div class="score"><span class="num" data-unit="secs">--</span><span class="lbl">sec</span></div>
+        </div>
+      </div>
+
+      <!-- The signature: a ball rallying over the net -->
+      <div class="rally" aria-hidden="true">
+        <div class="net"></div>
+        <div class="ball"></div>
+      </div>
+    </section>
+
+    <!-- Meta strip -->
+    <section class="facts" aria-label="Tournament facts">
+      <div class="fact">
+        <span class="fact-k">Date</span>
+        <span class="fact-v">Fri · Jul 17, 2026</span>
+      </div>
+      <div class="fact">
+        <span class="fact-k">Venue</span>
+        <span class="fact-v">Break Room Arena · FRE01</span>
+      </div>
+      <div class="fact">
+        <span class="fact-k">Field</span>
+        <span class="fact-v">24 players · single elim</span>
+      </div>
+      <div class="fact">
+        <span class="fact-k">Match</span>
+        <span class="fact-v">Best of 5 to 11</span>
+      </div>
+    </section>
+
+    <!-- Format -->
+    <section class="section" id="format">
+      <header class="section-head">
+        <p class="eyebrow">The road to the table</p>
+        <h2>Five rounds. One night.</h2>
+        <p class="section-lead">Straight knockout — lose once and you're spectating with the good snacks. Seeding is drawn live the morning of.</p>
+      </header>
+
+      <ol class="rounds">
+        <li class="round">
+          <span class="round-no">R1</span>
+          <div class="round-body">
+            <h3>Round of 24</h3>
+            <p>Top 8 seeds get a bye. The other 16 play in for the last 8 spots.</p>
+          </div>
+          <span class="round-meta">16 matches</span>
+        </li>
+        <li class="round">
+          <span class="round-no">R2</span>
+          <div class="round-body">
+            <h3>Round of 16</h3>
+            <p>The bracket fills out. Byes are spent — everyone's earning it now.</p>
+          </div>
+          <span class="round-meta">8 matches</span>
+        </li>
+        <li class="round">
+          <span class="round-no">QF</span>
+          <div class="round-body">
+            <h3>Quarterfinals</h3>
+            <p>Best of 5 from here on. Bring a towel.</p>
+          </div>
+          <span class="round-meta">4 matches</span>
+        </li>
+        <li class="round">
+          <span class="round-no">SF</span>
+          <div class="round-body">
+            <h3>Semifinals</h3>
+            <p>Crowd forms. The whiteboard becomes a betting pool. We did not authorize the betting pool.</p>
+          </div>
+          <span class="round-meta">2 matches</span>
+        </li>
+        <li class="round round-final">
+          <span class="round-no">F</span>
+          <div class="round-body">
+            <h3>The Final</h3>
+            <p>One table. Two players. The first name on the trophy that did not exist until now.</p>
+          </div>
+          <span class="round-meta">1 match</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Schedule -->
+    <section class="section section-dark" id="schedule">
+      <header class="section-head">
+        <p class="eyebrow">Run of show</p>
+        <h2>How the night plays out</h2>
+      </header>
+
+      <table class="schedule" aria-label="Event schedule">
+        <thead>
+          <tr><th scope="col">Time</th><th scope="col">Block</th><th scope="col">Where</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="t">4:30</td><td>Check-in &amp; warm-up rallies</td><td>Break Room Arena</td></tr>
+          <tr><td class="t">5:00</td><td>Seeding draw &amp; Round of 24</td><td>Tables 1–4</td></tr>
+          <tr><td class="t">6:00</td><td>Round of 16 + dinner arrives</td><td>Tables 1–4</td></tr>
+          <tr><td class="t">7:00</td><td>Quarterfinals</td><td>Tables 1–2</td></tr>
+          <tr><td class="t">7:45</td><td>Semifinals</td><td>Center table</td></tr>
+          <tr><td class="t">8:30</td><td>The Final &amp; trophy</td><td>Center table</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Rules + prizes -->
+    <section class="section" id="rules">
+      <div class="split">
+        <div class="split-col">
+          <p class="eyebrow">House rules</p>
+          <h2>Keep it clean</h2>
+          <ul class="ticks">
+            <li>Standard ITTF scoring — games to 11, win by 2.</li>
+            <li>Serve alternates every 2 points; switch ends each game.</li>
+            <li>Edge balls count. Arguing edge balls does not.</li>
+            <li>Bring your own paddle or grab a loaner at check-in.</li>
+            <li>Be cool. It's a company party with a scoreboard.</li>
+          </ul>
+        </div>
+        <div class="split-col">
+          <p class="eyebrow">On the line</p>
+          <h2>Prizes</h2>
+          <div class="prizes">
+            <div class="prize prize-1"><span class="medal">1st</span><div><h3>The Founders Cup</h3><p>Engraved trophy, year-long desk custody, eternal bragging rights.</p></div></div>
+            <div class="prize prize-2"><span class="medal">2nd</span><div><h3>Runner-up</h3><p>Premium paddle &amp; a very respectable round of applause.</p></div></div>
+            <div class="prize prize-3"><span class="medal">3rd</span><div><h3>Third</h3><p>You medaled at the first one. That's a story.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Register CTA -->
+    <section class="cta-band" id="register">
+      <div class="cta-inner">
+        <h2>Seats are limited to 24.</h2>
+        <p>Registration closes when the bracket fills or July 14 — whichever lands first.</p>
+        <a class="btn btn-primary btn-lg" href="mailto:it@ultimagen.com?subject=UG%20Open%20—%20Sign%20me%20up">Sign me up</a>
+        <p class="cta-fine">Questions? Drop a ticket in the <a href="https://servicedesk.ultimagen.com/support/home">IT Service Portal</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>UG Open · First Serve</span>
+    <span class="footer-dot">·</span>
+    <span>An Ultima Genomics community event</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
